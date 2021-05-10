@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+body {
+  font-family: 'Comic Sans MS', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.portfolio .item__field-2 {
+  width: 500px;
+}
+
+.portfolio .progress-circle {
+  font-size: 1rem;
+  margin: 20px;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  background-color: #f2e9e1;
+  border-radius: 50%;
+}
+
+.portfolio .progress-circle:after {
+  content: ' ';
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 4.3em;
+  height: 4.3em;
+  background-color: white;
+}
+
+.portfolio .progress-circle .count-content {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #08a1db;
+  z-index: 2;
+  display: inline-block;
+}
+
+.portfolio .progress-circle .left-half-clipper {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  clip: rect(0, 5em, 5em, 2.5em);
+}
+
+.portfolio .progress-circle .value-bar {
+  position: absolute;
+  clip: rect(0, 2.5em, 5em, 0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #08a1db;
+  -webkit-transform: rotate(136deg);
+          transform: rotate(136deg);
+}
+
+.portfolio .progress-circle.over50 .left-half-clipper {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.portfolio .progress-circle.over50 .first50-bar {
+  position: absolute;
+  clip: rect(0, 5em, 5em, 2.5em);
+  background-color: #08a1db;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .progress-circle:not(.over50) .first50-bar {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- <h1 class="page-header">Hello world <small>secondary text</small> </h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. <kbd>jdkfjdkfjsdlfjk</kbd> Quaerat, et
+            quod?
+            Incidunt at adipisci omnis voluptas, culpa rem voluptatum recusandae, error odio
+            reprehenderit tempora. Ducimus delectus beatae enim adipisci voluptas?</p>
+        <p class="text-justify"><mark>Lorem ipsum </mark> sit amet consectetur <del>adipisicing elit. Corporis,
+                voluptatibus.</del>
+            <u>Lorem ipsum</u> dolor sit amet consectetur adipisicing elit. Voluptatum officia
+            facilis adipisci necessitatibus sunt id inventore at. Consequatur, nam fugit
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora veniam nobis,
+            aspernatur saepe sunt molestias! Unde assumenda blanditiis deserunt repellat?.</p>
+        <div class="text-left text-lowercase">text</div>
+        <p class="text-right text-uppercase">text</p>
+        <p class="text-center text-capitalize">text</p>
+
+        <div class="float-left">div floated left</div>
+        <div class="float-right">div floated right</div>
+        <div class="clearfix"></div>
+        <blockquote class="blockquote-reverse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            vitae accus aliquid, ullam praesentium illo alias?<kbd>ctrl + ,</kbd>
+            <footer>Quote by <cite class="John Doe">John Doe</cite></footer>
+        </blockquote>  -->
+    <!----------------------------------------------------------------------------------------- LISTS -->
+    <hr>
+    <ul class='list-unstyled'>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+        <li>text</li>
+    </ul>
+    <ul class='list-group  list-group-flush'>
+        <li class="text-primary list-group-item">text content</li>
+        <li class="text-success list-group-item">text content</li>
+        <li class="text-info list-group-item">text content</li>
+        <li class="text-warning list-group-item">text content</li>
+        <li class="text-danger list-group-item">text&copy; content</li>
+        <li class="text-muted list-group-item">text content</li>
+
+        <li class="bg-primary list-group-item">text</li>
+        <li class="bg-success list-group-item">text</li>
+        <li class="bg-info list-group-item">text</li>
+        <li class="bg-warning list-group-item">text</li>
+        <li class="bg-danger list-group-item">text&copy;</li>
+        <li class="bg-muted list-group-item">text</li>
+    </ul>
+    <code>&lt;h1&gt;heading  text&lt;h1&gt;</code>
+
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-primary list-group-item-action">text</a>
+        <a href="#" class="list-group-item list-group-item-primary list-group-item-action">text</a>
+        <a href="#" class="list-group-item list-group-item-primary list-group-item-action">text</a>
+    </div>
+
+
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                    href="#home">Home</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                    href="#profile">Profile</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                    href="#messages">Messages</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="home">
+                    <img src="https://source.unsplash.com/user/erondu/1600x900" alt="" width='300'>
+                </div>
+                <div class="tab-pane fade" id="profile">
+                    <img src="https://source.unsplash.com/WLUHO9A_xik/1600x900" alt="" width='300'>
+                </div>
+                <div class="tab-pane fade" id="messages">
+                    <img src="https://source.unsplash.com/collection/190727/1600x900" alt="" width='300'>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------------------- BUTTONS -->
+    <!-- <button class="btn btn-primary">primary</button>
+    <button class="btn btn-secondary">secondary</button>
+    <button class="btn btn-success">success</button>
+    <button class="btn btn-info">info</button>
+    <button class="btn btn-warning">warning</button>
+    <button class="btn btn-danger">danger</button>
+    <button class="btn btn-light">light</button>
+    <button class="btn btn-dark">dark</button>
+
+    <a href="#" class="btn btn-primary">link</a>
+    <input type="button" class="btn btn-primary" value='submit'>
+
+    <button class="btn btn-link">link</button>
+
+    <button class="btn btn-xl">button</button>
+    <button class="btn btn-outline-success btn-lg">button</button>
+    <button class="btn btn-outline-success btn-md">button</button>
+    <button class="btn btn-outline-success btn-sm">button</button>
+
+    <button class="btn btn-primary btn-lg btn-block">block button</button>
+
+    <button class="btn btn-success active my-5">active button</button>
+
+    <button class="btn btn-primary" disabled>dissabled buttton</button>
+    <a href="#" class="btn btn-primary disabled">dissabled link button</a>
+
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+            <input type="radio" name="options" autocomplete="off" checked> Active
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" autocomplete="off"> Radio
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" autocomplete="off"> Radio
+        </label>
+    </div>
+    <div class="btn-group">
+        <button type='button' class="btn btn-primary">button</button>
+        <button type='button' class="btn btn-primary">button</button>
+        <button type='button' class="btn btn-primary">button</button>
+    </div>
+
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <button type="button" class="btn btn-secondary">3</button>
+            <button type="button" class="btn btn-secondary">4</button>
+        </div>
+        <div class="btn-group mr-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-secondary">5</button>
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-secondary">7</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-secondary">8</button>
+        </div>
+    </div> -->
+    <!-------------------------------------------------------------------------------- BADGES -->
+    <!-- <hr>
+        <a href="#" type='button' class='btn btn-primary'>
+            inbox<span class='badge badge-light'>50</span>
+        </a>
+
+        <button class='btn btn-primary' type='button'>
+            messages <a href='#' class="badge badge-light badge-pill">24</a>
+        </button>
+
+        <button class="btn btn-success">
+            <span class="badge badge-primary">jfk</span>fdsfdfds
+        </button>
+
+        <button class="badge badge-danger badge-pill">kdjfslkd</button> -->
+    <!-------------------------------------------------------------------------------------- IMGS -->
+    <!-- <hr>
+    <img class='thumbnail' src="https://via.placeholder.com/150" alt="">
+    <img class='img-rounded' src="https://via.placeholder.com/150" alt="">
+    <img class='img-circle' src="https://via.placeholder.com/150" alt=""> -->
+    <!-- -------------------------------------------------------------------------------------FORM -->
+    <!-- <hr>
+    <form>
+        <div class="form-group">
+            <label for="#first">name</label>
+            <input id="first" type="text" class='form-control' placeholder='name'>
+        </div>
+        <div class="form-group">
+            <label for="second">email</label>
+            <input id="second" type="email" class='form-control form-control-lg' placeholder='email' readonly>
+        </div>
+        <div class="form-group">
+            <label for="select">message</label>
+            <select multiple id="select" class='form-control'>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="file">upload file</label>
+            <input id="file" type="file" class="form-control-file">
+            <p class="help-block">only png and jpg allowed</p>
+        </div>
+        <div class="form-group form-check">
+            <input id="checkbox" type="checkbox" class="form-check-input">
+            <label for="checkbox" class="form-check-label">check me</label>
+        </div>
+        <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+
+    <hr>
+    <form class="form-inline">
+        <div class="form-group">
+            <label>name</label>
+            <input type="text" class='form-control' placeholder='name'>
+        </div>
+        <div class="form-group">
+            <label>email</label>
+            <input type="email" class='form-control' placeholder='email'>
+        </div>
+        <div class="form-group">
+            <label>message</label>
+            <select class='form-control'>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>upload file</label>
+            <input type="file">
+            <p class="help-block">only png and jpg allowed</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">check me
+            </label>
+        </div>
+        <button class="btn btn-default">submit</button>
+    </form> -->
+    <!-- ---------------------------------------------------------------------------------------------------TABLE -->
+    <!-- <hr>
+    <table class='table table-striped table-bordered table-hover table-condensed'>
+        <tr class='bg-danger'>
+            <th>name</th>
+            <th>last name</th>
+            <th>age</th>
+        </tr>
+        <tr class='bg-success'>
+            <td>john</td>
+            <td>Doe</td>
+            <td>47</td>
+        </tr>
+        <tr>
+            <td class='bg-warning'>Jack</td>
+            <td>Carter</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td class='text-danger'>Alice</td>
+            <td>Fox</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>Tom</td>
+            <td>Winstone</td>
+            <td>42</td>
+        </tr>
+    </table> -->
+    <!------------------------------------------------------------------------------------------- ALERT -->
+    <!-- <hr>
+    <div class="alert alert-succes" role="alert">alert succes</div>
+    <div class="alert alert-info" role="alert">alert info</div>
+    <div class="alert alert-warning" role="alert">alert warning</div>
+    <div class="alert alert-danger" role="alert">alert danger</div>
+
+    <div class="alert alert-warning alert-dismissible fade show" role='alert'>gjghjh
+        <button type='button' class='close' data-dismiss='alert'><span>&times;</span>you can close this alert</button>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" style='width: 50%;'>50%</div>
+    </div> -->
+    <!------------------------------------------------------------------------------------------- GRID -->
+    <!-- <hr>
+    <div class="row">
+        <div class="col-lg-8 col-8">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae, kfjsd fdjfksd jfsjfklsdjkdjsf sdjfksdjf sd
+                fdjsfdj flkjdsf dlkfjsd fdk fexplicabo.</p>
+        </div>
+        <div class="col-lg-2 col-lg-offset-2 col-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, necessitatibus!</p>
+        </div>
+    </div>-->
+    <!-- -----------------------------------------------------------------------------------------MARGIN PADDING D-BLOCK -->
+    <!-- <ul>
+        <li class='bg-primary ml-sm-1'>m-1 = 4px margin</li>
+        <li class='bg-primary ml-sm-2'>m-2 = 8px margin</li>
+        <li class='bg-primary ml-sm-3'>m-3 = 16px margin</li>
+        <li class='bg-primary ml-sm-4'>m-4 = 24px margin</li>
+        <li class='bg-primary ml-sm-5'>m-5 = 48px margin</li>
+    </ul>
+    
+
+    <ul>
+        <li class='bg-success d-block'>display block</li>
+        <li class='bg-success d-inline-block'>display inline-block</li>
+        <li class='bg-success d-none d-sm-block'>display none</li>
+    </ul>
+
+    <ul>
+        <li class='p-3 mb-5 rounded text-white bg-primary shadow'>rounded</li>
+        <li class='p-3 mb-5 rounded-top text-white bg-primary shadow-sm'>rounded top</li>
+        <li class='p-3 mb-5 rounded-bottom text-white bg-primary'>rounded bottom</li>
+        <li class='d-flex align-items-center justify-content-center mb-1 rounded-circle text-white bg-primary'
+            style='width: 100px; height: 100px;'>rounded</li>
+    </ul>
+
+    <ul class='list-unstyled'>
+        <li class="p-3 mb-5 shadow">shadow</li>
+        <li class="p-3 mb-5 shadow">shadow</li>
+        <li class="p-3 mb-5 shadow">shadow</li>
+    </ul> -->
+   <!----------------------------------------------------------------------------------CAROUSEL  -->
+    <!-- <hr>
+    <h3 class="course-heading">Carousel</h3>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="https://source.unsplash.com/user/erondu/1600x900" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://source.unsplash.com/WLUHO9A_xik/1600x900" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://source.unsplash.com/collection/190727/1600x900" alt="">
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div> -->
+
+
+    <div style='height: 500px'></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+body {
+    overflow-x: hidden;
+}
+
+section {
+    border: 1px solid #3498db;
+    margin-bottom: 3rem;
+    height: 90vh;
+}
+img {
+    width: 10rem;
+    height: 15rem;
+}
+/* ---lazy loading */
+.lazy-element {
+    transform: translate(0);
+    opacity: 1;
+    transition: 0.5s, opacity 1s ease-out;
+    transform-origin:  right;
+}
+.lazy-element--left,
+.lazy-element--right,
+.lazy-element--up,
+.lazy-element--down,
+.lazy-element--opacity,
+.lazy-element--rotate {
+    transition: all 0s;
+    opacity: 0;
+}
+.lazy-element--left {
+    transform: translateX(-50%);
+}
+.lazy-element--right {
+    transform: translateX(50%);
+}
+.lazy-element--up {
+    transform: translateY(50%);
+}
+.lazy-element--down {
+    transform: translateY(-50%);
+}
+
+.lazy-element--rotate {
+    transform: rotateZ(-45deg);
+}
+.lazy-element--opacity {
+    /* opacity: 0; */
+}

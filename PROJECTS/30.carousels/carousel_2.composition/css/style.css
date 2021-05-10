@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+body {
+  background: #999;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.portfolio__title {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.portfolio__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+.portfolio__link img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio .modal-slide {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 96%;
+  max-width: 850px;
+  border: 1px solid green;
+  z-index: 1000;
+  padding-top: 53%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.portfolio .modal-slide.modifire {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.portfolio .modal-slide__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.portfolio .modal-slide__closer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #999;
+}
+
+.portfolio .modal-slide__closer:hover {
+  background: red;
+  color: #999;
+}
+
+.portfolio .modal-slide__btns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio .modal {
+  width: 96%;
+  max-width: 450px;
+  background: #3498db;
+  height: 200px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 1000;
+}
+
+.portfolio .modal.modifire {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media screen and (min-width: 576px) {
+  .portfolio__content {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+/*# sourceMappingURL=style.css.map */

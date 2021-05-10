@@ -1,0 +1,6 @@
+.header {
+    background: color(light);
+    min-height: 100vh;
+    @include df;
+    background:rgb(234, 233, 238) url('../images/header/bg-4.png') right/80% no-repeat;
+}

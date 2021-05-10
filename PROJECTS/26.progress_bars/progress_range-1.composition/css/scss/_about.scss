@@ -1,0 +1,40 @@
+.about {
+    .container {
+        height: 50vh;
+        margin-bottom: 10rem;
+        @include df;
+    }
+    .slider {
+        appearance: none;
+        width: 100%;
+        background: linear-gradient(90deg,rgba(117,252,117,1) 0%,rgba(214,214,214,1) 0% );
+        height: 25px;
+        outline: none;
+        // border: 5px solid #333;
+        border-radius:40px;
+        box-shadow: 0px 1px 10px 1px #000;
+        transition:.3s;
+    }
+    .slider::-webkit-slider-thumb {
+        appearance: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(117,252,117,1);
+        border: 0.6rem solid #333;
+        cursor: pointer;
+        transition: border-color .3s;
+        &:hover {
+            border-color: #000;
+        }
+        &:active{
+            border-color: #333;
+        }
+    }
+
+    
+    p{
+        width: 3rem;
+        border: 1px solid rgba(117,252,117,1);
+    }
+}

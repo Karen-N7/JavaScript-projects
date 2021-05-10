@@ -1,0 +1,94 @@
+//<!-- COLORS
+$colors: (
+    // primary: #3498db,
+    // pink: "#FF73FD",
+    danger: rgb(234, 84, 33),
+    primary: rgb(52, 152, 219),
+    info: #17a2b8,
+    success: rgb(27, 154, 27),
+    warning: #ffc107,
+    dark: rgb(50, 49, 46),
+    secondary: #6c757d,
+    light: #f8f9fa
+);
+
+@function color($property: primary) {
+    @return map-get($colors, $property);
+}
+// -->
+
+//<!--  FONT SIZES
+$fontSizes: (
+    sm: 0.8rem,
+    md: 1rem,
+    lg:1.2rem
+);
+
+@function fontSize($property: md) {
+    @return map-get($fontSizes, $property);
+}
+//-->
+
+//<!-- GRADIENTS
+$gradients: (
+    primary: linear-gradient(180deg,color(info),color(success))
+);
+
+@function gradient($property: primary){
+    @return map-get($gradients,$property);
+}
+
+// <--
+
+
+//<!-- SHADOWS
+$shadows: (
+    success:0 3px 10px rgba(37,174,21,1)
+);
+
+@function shadow($property: success){
+    @return map-get($shadows,$property);
+}
+
+// <--
+
+//<!-- BREAKPOINTS
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 3840px
+);
+
+@mixin mq($size: 768px) {
+    @media screen and (min-width: #{$size}) {
+        @content;
+    }
+}
+
+@function breakpoint($property: md) {
+    @return map-get($grid-breakpoints, $property);
+}
+// -->
+
+@mixin df($horizontal: center, $vertical: center) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+@mixin pos($type: absolute) {
+    position: $type;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin text() {
+    line-height: 1.5;
+    color: color(secondary);
+    letter-spacing: 0.03em;
+}

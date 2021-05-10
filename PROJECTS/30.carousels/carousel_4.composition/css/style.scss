@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid orange;
+}
+
+@mixin mq($size: 768px) {
+    @media screen and (min-width: #{$size}) {
+        @content;
+    }
+}
+
+@import './scss/portfolio';
+@import './scss/about';
+
+
+/* width */
+::-webkit-scrollbar {
+    position: absolute;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+    height: 10vh;
+    display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+

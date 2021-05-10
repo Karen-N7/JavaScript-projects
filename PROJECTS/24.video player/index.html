@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/aa45dbf0ee.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='wrapper'>
+            <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" muted></video>
+        </div>
+        <div class="controls" >
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class='volumeControls'>
+                <button id='playPause'></button>
+                <button id='volume'></button>
+                <input id='volumeRange' type="range" min='0' max='1' value='100' step='0.10'>
+            </div>
+            <div class="timeInfo">00 : 00 / 00 : 00</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+.portfolio {
+    .item {
+        &__field{
+            &-2 {
+                width: 500px;
+            }
+        }
+    }
+    .progress-circle {
+        font-size: 1rem;
+        margin: 20px;
+        position: relative;
+        width: 5rem;
+        height: 5rem;
+        background-color: #f2e9e1;
+        border-radius: 50%;
+        &:after {
+            content: ' ';
+            position: absolute;
+            @include pos;
+            border-radius: 50%;
+            width: 4.3em;
+            height: 4.3em;
+            background-color: white;
+        }
+        & .count-content {
+            position: absolute;
+            @include pos;
+            color: #08a1db;
+            z-index: 2;
+            display: inline-block;
+        }
+        .left-half-clipper {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            clip: rect(0, 5em, 5em, 2.5em);
+        }
+        .value-bar {
+            position: absolute;
+            clip: rect(0, 2.5em, 5em, 0);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #08a1db;
+            transform: rotate(136deg);
+            // transition: 3s;
+   
+        }
+        &.over50 .left-half-clipper {
+            clip: rect(auto, auto, auto, auto);
+        }
+        &.over50 .first50-bar {
+            position: absolute;
+            clip: rect(0, 5em, 5em, 2.5em);
+            background-color: #08a1db;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+   
+        }
+        &:not(.over50) .first50-bar {
+            display: none;
+        }
+    }
+}
+
+
+//   .progress-circle.p0 .value-bar {
+//     display: none;
+//   }
+
+
+

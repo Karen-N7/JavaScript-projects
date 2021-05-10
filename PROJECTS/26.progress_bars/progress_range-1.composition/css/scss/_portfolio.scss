@@ -1,0 +1,44 @@
+.portfolio {
+    .container {
+        height: 50vh;
+        @include df;
+    }
+    .slider {
+        appearance: none;
+        width: 100%;
+        background: #111;
+        height: 40px;
+        outline: none;
+        border: 5px solid #333;
+        overflow: hidden;
+        box-shadow: inset 0 0 5px rgba(0,0,0,1);
+        border-radius:40px;
+        &:hover::-webkit-slider-thumb {
+            box-shadow: calc(-100vw - 20px) 0 0 100vw rgba(0, 161, 255,0.8);
+        }
+    }
+    .slider::-webkit-slider-thumb {
+        appearance: none;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: rgba(0, 161, 255,0.9);
+        box-shadow: calc(-100vw - 20px) 0 0 100vw rgba(0, 161, 255,0.9);
+        border: 0.6rem solid #333;
+        cursor: pointer;
+        transition: background .3s, box-shadow .3s;
+        &:hover {
+            background: rgba(0, 161, 255,0.8);
+            box-shadow: calc(-100vw - 20px) 0 0 100vw rgba(0, 161, 255,0.8);
+        }
+        &:active{
+            background: rgba(0, 161, 255,1);
+            box-shadow: calc(-100vw - 20px) 0 0 100vw rgba(0, 161, 255,1)
+        }
+    }
+
+    p{
+        width: 3rem;
+        border: 1px solid rgba(0, 161, 255,1)
+    }
+}

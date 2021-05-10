@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .raceSpace {
+            height: 100vh;
+            position: relative;
+            background: linear-gradient(180deg, #3498db 70%, green);
+        }
+        
+        .img {
+            width: 100px;
+            height: 150px;
+            transform: rotate(90deg);
+            position: absolute;
+            left: -100px;
+            transition: left 0s linear 0s;
+        }
+        
+        .img[data-altitude='10'] {
+            background: radial-gradient(green 30%, white 70%, transparent 80%);
+        }
+    </style>
+</head>
+
+<body style='overflow: hidden;margin: 0;'>
+    <div class="raceSpace">
+        <img class='img img1' src="rocket.png" data-altitude='10' data-speed='3.5' data-rocket-distance='1300'>
+        <img class='img img2' src="rocket.png" data-altitude='150' data-speed='5' data-rocket-distance='1300'>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>

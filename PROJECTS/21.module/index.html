@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.modules by default work with 'use strict', strict mode -->
+    <!-- 2.DOM can see all elements from exported js but module type js can see only imported element(s)-->
+    <!-- 3.first triggered code in imported js then module code in type js, even if import syntax puted to the bottom of module type js -->
+    <!-- 4.imported elements cant be changed in module type js like they declared with const -->
+    <!-- 5.import element from './directory/other.js' where .js can be removed in react.js like short version  -->
+    <script type = 'module' src = 'script.js'></script>
+</body>
+</html>

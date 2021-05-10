@@ -1,0 +1,84 @@
+
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1920px;
+$xxxl: 3840px;
+
+@mixin mq($size: 768px) {
+    @media screen and (min-width: #{$size}) {
+        @content;
+    }
+}
+
+@mixin df($horizontal: center, $vertical: center) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+@mixin pos($type: absolute){
+    position: $type;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+$colors: (
+    // primary: #3498db,
+    // pink: "#FF73FD",
+    // danger: #dc3545,
+    danger: #ea5421,
+    primary: #007bff,
+    info: #17a2b8,
+    success: #28a745,
+    warning: #ffc107,
+    dark: #343a40,
+    secondary: #6c757d,
+    light: #f8f9fa,
+);
+
+@function color($property: primary) {
+    @return map-get($colors, $property);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    @include mq(1920px) { //1280 * 1.5 = 1920  // 1280 * 150 / 100 = 1920
+        // font-size: calc(16px * 1.5); = 24px
+        // font-size: calc(16px * 150 / 100); = 24px
+        font-size: 24px;
+    }
+    @include mq(3840px) {//1280 * 3 = 3840 // 1280 * 300 / 100 = 3840
+        // font-size: calc(16px * 3); = 48px
+        // font-size: calc(16px * 300 / 3); = 48px
+        font-size: 48px;
+    }
+}
+body {
+    font-family:'Comic Sans MS', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    
+}
+
+@import './scss/portfolio';
+@import './scss/about';

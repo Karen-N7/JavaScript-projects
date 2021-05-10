@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-------------------------------------------------------------------------------------------------------- DROPDOWN -->
+    <!-- <div class="dropdown">
+        <a href="#" class="btn btn-secondary dropdown-toggle" data-toggle='dropdown'>blabla</a>
+        <div class="dropdown-menu">
+            <a href='#' class="dropdown-item">something</a>
+            <a href='#' class="dropdown-item">something else</a>
+            <div class="dropdown-divider"></div>
+            <a href='#' class="dropdown-item">something else else</a>
+        </div>
+    </div> -->
+
+    <!---------------------------------------------------------------------------------------------- NAVBAR COLLAPSE -->
+    <!-- <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <a href="#" class="navbar-brand">Logo</a>
+        <button class="navbar-toggler" type='button' data-toggle='collapse' data-target='#test'>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class='collapse navbar-collapse' id='test'>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">one</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">one</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">one</a></li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <!----------------------------------------------------------------------------------------------- NAVBAR DROPDOWN -->
+    <!--fixed-top sticky-top-->
+    <!-- <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+        <a href="#" class="navbar-brand">Logo</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">one</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">one</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle='dropdown'>dropdown</a>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">one</a>
+                    <a href="#" class="dropdown-item">one</a>
+                    <a href="#" class="dropdown-item">one</a>
+                </div>
+            </li>
+        </ul>
+    </nav> -->
+    <!-- -------------------------------------------------------------------------------------------NAVBAR COLLAPSE DROPDOWN SEARCH -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav> -->
+    <!---------------------------------------------------------------------------------------------- COLLAPSE CONTENT -->
+    <!-- <a class='btn btn-primary' href="#collapseFirst" class='btn btn-primary' data-toggle='collapse'>collapsefirst</a>
+    <button class='btn btn-primary' data-target='#collapseSecond' data-toggle='collapse'>collapse second</button>
+    <button class="btn btn-success" data-target='.multi' data-toggle='collapse'>collapse both</button>
+    <div class='row'>
+        <div class='col'>
+            <div class='collapse multi' id='collapseFirst'>
+                <div class="card card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis illo molestiae totam
+                    assumenda facere placeat mollitia tempore necessitatibus unde excepturi qui et possimus
+                    maiores modi odit, tempora delectus consequuntur exercitationem nisi consequatur praesentium
+                    expedita molestias? Voluptatum asperiores fugiat eligendi soluta?
+                </div>
+            </div>
+        </div>
+        <div class='col'>
+            <div class='collapse multi col' id='collapseSecond'>
+                <div class="card card-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis illo molestiae totam
+                    assumenda facere placeat mollitia tempore necessitatibus unde excepturi qui et possimus
+                    maiores modi odit, tempora delectus consequuntur exercitationem nisi consequatur praesentium
+                    expedita molestias? Voluptatum asperiores fugiat eligendi soluta?
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <hr>
+    <div class="accordion" id='accordionExample' style='width: 300px;'>
+        <button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#collapseOne">
+            Collapsible Group Item #1
+        </button>
+        <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+        </div>
+        <button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#collapseTwo">
+            Collapsible Group Item #2
+        </button>
+        <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+        </div>
+        <button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#collapseThree">
+            Collapsible Group Item #3
+        </button>
+        <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+        </div>
+    </div> -->
+
+
+    <!--------------------------------------------------------------------------------------------- MODAL -->
+    <!-- <button type="button" class='btn btn-primary' data-toggle='modal' data-target='#myModal'>
+        Open modal
+    </button>
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class='modal-title'>modal header</h1>
+                    <button type='button' class='close' data-dismiss='modal'>&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non itaque est
+                        quam aliquam nulla cumque soluta explicabo corporis dicta quas odio atque
+                        omnis aperiam ea porro quasi illo facilis quaerat, illum laborum
+                        temporibus blanditiis. Placeat, ad ipsam. Exercitationem veniam numquam
+                        aliquid asperiores voluptatibus. Suscipit minima velit sapiente itaque
+                        temporibus blanditiis. Placeat, ad ipsam. Exercitationem veniam numquam
+                        aliquid asperiores voluptatibus. Suscipit minima velit sapiente itaque
+                        temporibus blanditiis. Placeat, ad ipsam. Exercitationem veniam numquam
+                        aliquid asperiores voluptatibus. Suscipit minima velit sapiente itaque
+                        dolores error!</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type='button' class="btn btn-danger" data-dismiss='modal'>close</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!----------------------------------------------------------------------------------------- SCROLLSPY -->
+    <!-- 
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#section1" class="nav-link">section1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section2" class="nav-link">section2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section3" class="nav-link">section3</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle='dropdown'>section4</a>
+                    <div class="dropdown-menu">
+                        <a href="#section41" class="dropdown-item">section41</a>
+                        <a href="#section42" class="dropdown-item">section42</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+            <h1>Section 1</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+            <h1>Section 2</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+            <h1>Section 3</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+            <h1>Section 4 Submenu 1</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+            <h1>Section 4 Submenu 2</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                look at the navigation bar while scrolling!</p>
+        </div> -->
+    <!--------------------------------------------------------------------COMPETITION OF GRIDS -->
+    <!-- <style>
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 100px;
+        }
+
+        .box1 {
+            grid-column: 2 span;
+        }
+
+        .box2 {
+            grid-row: 2 span;
+        }
+
+        .box3,
+        .box4 {
+            grid-column: 1 span;
+        }
+    </style>
+    <div class="grid">
+        <div class="box1" style='background: red'>1</div>
+        <div class="box2" style='background: green'>2</div>
+        <div class="box3" style='background: orange'>3</div>
+        <div class="box4" style='background: black'>4</div>
+    </div>
+
+    <div class='m-5 p-5'></div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8 bg-warning">
+                .col-8
+                <div class="row">
+                    <div class="col-6 bg-light">.col-6</div>
+                    <div class="col-6 bg-secondary">.col-6</div>
+                </div>
+            </div>
+            <div class="col-4 bg-success">.col-4</div>
+        </div>
+    </div> -->
+
+    <!------------------------------------------------------------------------- CARD -->
+    <hr>
+    <div class='card-columns'>
+        <div class="card">
+            <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        
+        <div class="card bg-primary text-white border-success">
+            <img src="https://source.unsplash.com/random" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+        </div>
+        
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="https://source.unsplash.com/random" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+     <div class="card text-center" style='width: 50rem;'>
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+    <!-- Example single danger button -->
+    <!-- Button trigger modal -->
+    
+
+</body>
+
+</html>

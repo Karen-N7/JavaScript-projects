@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+.bg {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container {
+    width: 28rem;
+    text-align: center;
+    color: green;
+    mix-blend-mode: difference;
+    /* height: inherit;
+    background: inherit;
+    -webkit-background-clip: text;
+                    background-clip: text;
+    color: transparent;
+    font: 900 35vmin/50vh cookie, cursive;
+    text-align: center;
+    filter: invert(1) grayscale(1) contrast(9); */
+}
+#time {
+    font-size: 36px;
+    font-weight: bold;
+}
+h1 {
+    display: flex;
+}
+span {
+    white-space: nowrap;
+}
+#name,
+#focus {
+    outline: none;
+    display: block;
+    overflow: hidden;
+    padding: 0 1rem;
+    min-width: 12rem;
+    text-align: left;
+}
+#focus {
+    width: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}

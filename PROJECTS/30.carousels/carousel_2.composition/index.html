@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <section class="portfolio">
+            <div class="container">
+                <h2 class="portfolio__title">Images</h2>
+                <div class="portfolio__content">
+                    <a href="#/" class="portfolio__link">
+                        <img src="./images/img-0.jpg" alt="" />
+                    </a>
+                    <a href="#/" class="portfolio__link">
+                        <img src="./images/img-1.jpg" alt="" />
+                    </a>
+                    <a href="#/" class="portfolio__link">
+                        <img src="./images/img-2.jpg" alt="" />
+                    </a>
+                    <a href="#/" class="portfolio__link">
+                        <img src="./images/img-3.jpg" alt="" />
+                    </a>
+                    <a href="#/" class="portfolio__link">
+                        <img src="./images/img-4.jpg" alt="" />
+                    </a>
+                    <a href="#/" class="portfolio__link">
+                        <img src="./images/img-5.jpg" alt="" />
+                    </a>
+                    <a href="#/" class="portfolio__link">
+                        <img src="./images/img-6.jpg" alt="" />
+                    </a>
+                    <a href="#/" class="portfolio__link">
+                        <img src="./images/img-7.jpg" alt="" />
+                    </a>
+                    <a href="#/" class="portfolio__link">
+                        <img src="./images/img-8.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-slide" id='modal-slide-1'>
+                <div class="modal-slide__closer modal-closer">closer</div>
+                <div class="modal-slide__content"></div>
+                <div class="modal-slide__btns">
+                    <button class="modal-slide__btn modal-slide__btn-1">prev</button>
+                    <button class="modal-slide__btn modal-slide__btn-2">next</button>
+                </div>
+            </div>
+
+            <div class="modal" id='modal-1'>
+                <div class="modal__closer modal-closer">closer</div>
+                modal
+            </div>
+            <a href="#/" class="portfolio__btn modal-btn" data-target='modal-1'>button</a>
+        </section>
+
+        <script src="./js/slide.js"></script>
+    </body>
+</html>

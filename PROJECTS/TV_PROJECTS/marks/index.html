@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background: #333;
+            }
+            input {
+                position: absolute;
+                width:0;
+                height: 0;
+                pointer-events: none;
+                opacity: 0;
+            }
+            .custom-radio,
+            .custom-checkbox {
+                width: 0.7rem;
+                height: 1.2rem;
+                margin-right: 0.5rem;
+                border: 0.2rem solid rgba(255, 255, 255, 1);
+                transform: rotateZ(30deg);
+                display: inline-block;
+                border-width: 0 0.2rem 0.2rem 0rem;
+                transition: 0.3s;
+                opacity: 0;
+            }
+
+            .custom-radio.active,
+            .custom-checkbox.active {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Radios</h2>
+        <div class="tab">
+            <ul class="tab__list radios">
+                <li class="tab__item">
+                    <div class="custom-radio"></div>
+                    <input type="radio" name="tab__radio-1" class="tab__radio" />
+                    <a class="tab__link label">Russian</a>
+                </li>
+                <li class="tab__item">
+                    <div class="custom-radio"></div>
+                    <input type="radio" name="tab__radio-1" class="tab__radio" />
+                    <a class="tab__link label">Russian</a>
+                </li>
+                <li class="tab__item">
+                    <div class="custom-radio"></div>
+                    <input type="radio" name="tab__radio-1" class="tab__radio" />
+                    <a class="tab__link label">Russian</a>
+                </li>
+            </ul>
+        </div>
+        <hr />
+        <h2>Checkboxes</h2>
+        <div class="filter">
+            <ul class="filter__list checkboxes">
+                <li class="filter__item">
+                    <div class="custom-checkbox"></div>
+                    <input type="checkbox" name="filter__checkbox-2" class="filter__checkbox" />
+                    <a class="filter__link label">Russian</a>
+                </li>
+                <li class="filter__item">
+                    <div class="custom-checkbox"></div>
+                    <input type="checkbox" name="filter__checkbox-2" class="filter__checkbox" />
+                    <a class="filter__link label">Russian</a>
+                </li>
+                <li class="filter__item">
+                    <div class="custom-checkbox"></div>
+                    <input type="checkbox" name="filter__checkbox-2" class="filter__checkbox" />
+                    <a class="filter__link label">Russian</a>
+                </li>
+            </ul>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

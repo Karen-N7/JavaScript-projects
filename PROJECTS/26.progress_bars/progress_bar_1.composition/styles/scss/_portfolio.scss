@@ -1,0 +1,31 @@
+.portfolio {
+    height: 50vh;
+    border: 1px solid red;
+    .container {
+        @include df;
+        height: 100%;
+    }
+    .progress-bar {
+        width: 500px;
+        height: 3em;
+        border: 0.5em solid transparent;
+        background: #999;
+        border-radius: 2rem;
+        font-size: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .progress {
+        width: 30%;
+        height: 100%;
+        background: #00a1ff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 2rem;
+    }
+    .score {
+        @include pos;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,53 @@
+@mixin mq($size) {
+    @media screen and (min-width:#{$size}) {
+        @content;
+    }
+}
+
+@mixin df($pos:center) {
+    display: flex;
+    justify-content: $pos;
+    align-items: center;
+}
+
+@mixin pos($type: absolute) {
+    position: $type;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+body {
+    background: #999;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    transition: 0.3s;
+}
+
+@include mq(576px){
+    body {
+    
+    }
+}
+
+@import './scss/portfolio';
+

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS';
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+ul {
+    border: 1px solid #000;
+    width: 300px;
+    height: 100vh;
+    padding-top: 100px;
+    background: #666;
+}
+
+li {
+    list-style: none;
+    border: 1px solid #000;
+    padding: 30px 50px;
+    font-size: 26px;
+    color: #fff;
+}
+.active {
+    background: #333;
+}
+
+a {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-size: 36px;
+    border: 1px solid #000;
+    background: #3498db;
+    color: #fff;
+    padding: 100px;
+    font-weight: bolder;
+    display: none;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,44 @@
+* {
+    font-size: 20px;
+}
+
+body {
+    background: #3498db;
+}
+
+.center {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 200px
+}
+
+input {
+    background: #59ea85;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    outline: none;
+    border: 1px solid #333;
+}
+
+#btn {
+    width: 30%;
+    height: 35px;
+    background: #333;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    opacity: .7;
+}
+
+#btn:active {
+    border-color: green;
+    opacity: 1;
+}
