@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.scss">
+</head>
+<body>
+    <section class="contact">
+        <div class="alert-response">alert</div>
+        <form  class="form" >
+            <div class="form-group fade fade-up">
+                <label class="form-label " for="name">first name <span class="text-danger">*</span></label>
+                <input type="text" autocomplete="off" class="form-control" id="name" name='name' />
+                <div class="alert alert-name">alert</div>
+            </div>
+            <div class="form-group fade fade-up">
+                <label class="form-label" for="surname">last name  <span class="text-danger">*</span></label>
+                <input type="text" autocomplete="off" class="form-control" id="surname"  name='surname'/>
+                <div class="alert alert-surname">alert</div>
+            </div>
+            <div class="form-group fade fade-up">
+                <label class="form-label" for="email">email  <span class="text-danger">*</span></label>
+                <input type="text" autocomplete="off" class="form-control" id="email" name='email' />
+                <div class="alert alert-email">alert</div>
+            </div>
+            <div class="form-group fade fade-up">
+                <label class="form-label" for="message" >message</label>
+                <textarea name="message"  cols="30" rows="5" name='message' id='message'></textarea>
+            </div>
+            <button class="btn btn-success" >send</button>
+        </form>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

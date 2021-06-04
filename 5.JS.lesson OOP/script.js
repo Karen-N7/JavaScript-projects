@@ -148,30 +148,34 @@
 // person1.revise('Tom');
 // console.log(person1);
 // // // ------------------------------ Magazine Constructor combine with prototype
-// function Person(name, lastName, age) {
-//     this.name = name;
-//     this.lastName = lastName;
-//     this.age = age;
-// }
+function Person(name, lastName, age) {
+    this.name = name;
+    this.lastName = lastName;
+    this.age = age;
+}
 
-// Person.prototype.process = function () {
-//     var currentAge = new Date().getFullYear() - this.age;
-//     return `${this.name} ${this.lastName} was ${currentAge} years old`;
-// }
+Person.prototype.process = function () {
+    var currentAge = new Date().getFullYear() - this.age;
+    return `${this.name} ${this.lastName} was ${currentAge} years old`;
+}
 
-// function Magazine(name, lastName, age,eyeColor) {
-//     Person.call(this,name, lastName, age);
-//     this.eyeColor = eyeColor;
-// }
-// // Magazine.prototype = Object.create(Person.prototype);
-// // Magazine.prototype.constructor = Magazine;
-// Object.setPrototypeOf(Magazine.prototype,Person.prototype)
+function Magazine(name, lastName, age,eyeColor) {
+    Person.call(this,name, lastName, age);
+    this.eyeColor = eyeColor;
+}
+// Magazine.prototype = Object.create(Person.prototype);
+// Magazine.prototype.constructor = Magazine;
+Object.setPrototypeOf(Magazine.prototype,Person.prototype)
 
-// Magazine.prototype.someMethod = function() {
-//     console.log('some method')
-// }
+Magazine.prototype.someMethod = function() {
+    console.log('some method')
+}
 
-// var person_1 = new Magazine('Tom','Winstone',1961,'green')
+var person_1 = new Magazine('Tom','Winstone',1961,'green')
+
+console.dir(Magazine)
+
+
 // console.dir(Person)
 // console.dir(person_1);
 ////////////////////////////////////////////

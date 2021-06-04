@@ -1,0 +1,100 @@
+
+
+.list-group {
+    display: grid;
+    grid-gap: 1rem;
+    &-item {
+        cursor: pointer;
+        transition: transform .3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &:active {
+            transform: scale(1);
+        }
+    }
+    .img-responsive{
+        width: 100%;
+        padding-top: 56%;
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    .list-group {
+        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    }
+}
+
+.img-responsive {
+    position: relative;
+    width: 90%;
+    padding-top: 46.25%;
+    height: 0;
+    & img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+.output {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease;
+    &.show {
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    & .img-responsive {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 5rem;
+    z-index: 1001;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    transition: transform .3s ease;
+ 
+    &-left {
+        left: 0;
+        transform: translate(-50%,-50%) rotateY(180deg);
+        &:hover {
+            transform: translate(-50%,-50%) rotateY(180deg) scale(1.1);
+        }
+        &:active {
+            transform: translate(-50%,-50%) rotateY(180deg);
+        }
+    }
+    &-right {
+        right: 0;
+        transform: translate(50%,-50%);
+        &:hover {
+            transform: translate(50%,-50%) scale(1.1);
+        }
+        &:active {
+            transform: translate(50%,-50%) scale(1);
+        }
+    }
+}
